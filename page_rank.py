@@ -47,7 +47,7 @@ def page_rank(incoming_graph, outgoing_graph, nodes, itr_times, damping_factor):
         total_factor += page_rank[key]
 
     for key in nodes:
-        page_rank[key ] /= total_factor
+        page_rank[key] /= total_factor
     return page_rank
 
 if __name__=="__main__":
